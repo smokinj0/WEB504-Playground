@@ -1,0 +1,150 @@
+/*Global and reset styles*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    --primary: #3498db;
+    --secondary: #e67e22;
+    --radius: 8px;
+    --shadow: 0 2px rgba(0,0,0,0.10);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #f6f7f9;
+    colour: #222;
+    line-height: 1.6;
+
+}
+
+/* Accessibility Helpers*/
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    z-index: 10;
+    padding: 1px 0;
+    margin-bottom: 2px;
+}
+
+#main-title {
+    text-align: center;
+    colour: var(--primary);
+    letter-spacing: 1px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin-top: 1em;
+
+}
+
+.nav-link {
+    colour: var(---secondary);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.25em 0.75em;
+    border-radius: 4px;
+    transition: background 0.2s;
+
+}
+.nav-link:focus,
+.nav-link:hover {
+    background: var(--primary);
+    colour: #fff;
+    outline: 2px solid #222;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #eeee;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2em;
+    max-width: 450px;
+    margin: 2em auto;
+    outline: none;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: solid #333;
+    margin: 1em;
+    display: block;
+}
+
+.h1,h2,h3 {
+    margin-bottom: 0.7em;
+}
+
+h2 + p {
+    font-style: italic;
+    colour: #8e44ad;
+
+}
+
+.highlight {
+    colour: var(--secondary);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    border:1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    width: 45%;
+    display: block;
+
+}
+ a[terget="_blank"] {
+    colour: var(--secondary);
+ }
+
+ input:focus {
+    outline: 2px solid #3498db;
+ }
+
+ label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+ }
+
+ .flex-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+ }
+
+ .skill-item {
+    background: #f4f4f4;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #dddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+ }
