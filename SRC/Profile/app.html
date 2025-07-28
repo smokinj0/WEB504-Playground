@@ -1,0 +1,78 @@
+<DOCTYPE html>
+    <html lang="eng">
+        <head>
+            <!--metacharset, viewpoint for mobile and SEO tags-->
+        <meta charset="UTF-8">
+        <meta name="descritption" content="Josh Pye - Software Dev, explore skills, projects etc">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title> Josh Pye | Profile, skills and projects</title>
+
+        <!-- SEO: Open Graph for better social media sharing-->
+         <meta property=og:title content="Josh Pye | Profile, skills etc">
+         <meta property="og:description" content="Josh Pye - Software Dev">
+         <meta property="og:type" content="website">
+
+         <!--link to external CSS-->
+         <link rel="stlesheet" href="styles.css">
+         </head>
+         <body>
+            <!--Main Header and nav-->
+            <header class="sticky-header role=banner">
+                <!--site title with id and keyboard focus-->
+                <h1 id="main-title" tabindex="0">Joshs Profile </h1>
+                <nav aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-limk">About</a></li>
+                        <li><a href=#skills class=nav-link">Skills</a></li>
+                        <li><a href=#projects class=nav-link">Projects</a></li>
+                        <!--Target="_blank" opens link in a new tab-->
+                        <li><a href=#contact class="nav-link" target="_blank">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Main page content-->
+            <main id="main">
+                <!-- About me section-->
+                 <section id="about" class="card animated">
+                    <img src="" alt="Portrait of me" class="profile-img">
+                    <h2 id="about-heading">About me</h2>
+                    <p>Im JP and making a website</p>
+                    <!-- hobbies as inline list-->
+                     <ul class="hobbies">
+                        <li>gym</li>
+                        <li>beer</li>
+                     </ul>
+                 </section>
+
+                 <!--Projects with grid slide in animation-->
+                 <section id="projects" class="card-grid container">
+                    <!--Heading is visually hidden for screen readers only-->
+                    <h2 id="project-heading" class="visually-hidden">Project</h2>
+                    <div class="project-slide-in-left">
+                        <h3> blah </h3>
+                        <p> related content</p>
+                    </div>
+                 </section>
+
+                 <!--contact form with labels and required fields-->
+                 <section id="contact" class="card">
+                    <h2 id="contact-heading">Contact Me</h2>
+                    <form autocomplete="on">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="your name" required>
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="your email">
+
+                        <button class="button" type="submit"></button>
+                        <button class="buton secondary" type="reset"> Reset</button>
+                    </form>
+                 </section>
+
+            </main>
+            <!--Page Footer with structured data for SEO-->
+            <footer role="contentinfo">
+            </footer>
+         </body>
+    </html>
+</DOCTYPE>
